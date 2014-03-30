@@ -1,0 +1,29 @@
+
+<% if flash[:error] %>
+  <% flash[:error].each do |error| %>
+  <%= error %>
+  <% end %>
+<% end %>
+
+<div class="edit_account">
+<%= form_for account, remote: true do |f| %>
+  <%= f.label :username %>
+  <%= f.text_field :username %>
+  <%= f.label :email %>
+  <%= f.text_field :email %>
+  <%= f.label :password %>
+  <%= f.password_field :password %>
+<% end %>
+</div>
+
+<script>
+var title = 'Edit my account'
+var leftButton = {
+  type: 'cancel',
+  text: 'Cancel'
+}
+var rightButton = {
+  type: 'submit',
+  text: 'Save'
+}
+</script>

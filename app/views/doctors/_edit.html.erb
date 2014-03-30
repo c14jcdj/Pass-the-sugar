@@ -1,0 +1,12 @@
+<%= render :partial => 'form', locals: { doctor: doctor, diabetic: diabetic } %>
+<script>
+var title = 'Edit Dr. <% doctor.name %>'
+var leftButton = {
+  type: 'cancel',
+  text: 'Cancel'
+}
+var rightButton = {
+  type: 'submit',
+  text: 'Save Doctor'
+}
+</script>

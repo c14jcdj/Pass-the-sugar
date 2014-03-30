@@ -1,0 +1,11 @@
+postgresql: &postgresql
+  adapter: postgresql
+  username: postgres
+  password:
+  database: helpme_<%= Rails.env %>
+  min_messages: ERROR
+
+test:
+  adapter: postgresql
+  encoding: unicode
+  database: helpme_test

@@ -1,0 +1,22 @@
+language: ruby
+rvm:
+- 1.9.3
+install: bundle install --without development --deployment
+before_script:
+- export DISPLAY=:99.0
+- sh -e /etc/init.d/xvfb start
+- echo "GlucoseAmigo::Application.config.secret_token = '$(bundle exec rake secret)'"
+  >> config/initializers/secret_token.rb
+- cp config/database.travis.yml config/database.yml
+- psql -c 'create database helpme_test' -U postgres
+script:
+- RAILS_ENV=test bundle exec rake db:migrate --trace
+- bundle exec rake db:test:prepare
+- rake spec
+deploy:
+  provider: heroku
+  api_key:
+    secure: ZHwM02UaxXS5jy9kHOcr29LzZ5nrrlSm4kkDXhTxHy1Ewr8V00O+yqKybDwS15U7H9yCo0BA0HEVf6SHksuknTFyhfbCwqn7fKQJOl5RhNVMH2B8Woxz8hhoB66pyLe6B1lVRIwqEIo9t7CQm+5hlEOeE2Jy4QkupYRYN2wg0Jk=
+  app: GlucoseAmigo
+  on:
+    repo: banana-slugs-2014/GlucoseAmigo

@@ -1,0 +1,1419 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require_tree .
+ */
+
+
+  /* CREATE ACCOUNT */
+
+  body {
+    background-size: 100%;
+    background: #99D6FF url("blurry-blue-glass.jpg");
+  }
+
+  #records-summary {
+    /*visibility:hidden;*/
+    display: none;
+  }
+
+  #content {
+    width: 75%;
+    max-width: 1000px;
+  }
+
+  #title {
+    margin-top: 4%;
+    text-align: center;
+    color: #5959FF;
+  }
+
+  .account-title {
+    text-align: center;
+  }
+
+  #none-button {
+    visibility: hidden;
+  }
+
+  #logo {
+    width: 25%;
+    height: 26.4%;
+    margin: auto;
+    margin-top: 10%;
+  }
+
+  #logo img {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .submit {
+    border: none;
+    border-radius: 5px;
+    background-color: #5959FF;
+    display: block;
+    width: 25%;
+    height: 7%;
+    margin: auto;
+    margin-top: 8%;
+    padding-top: 7px;
+    padding-bottom: 10px;
+    font-size: 170%;
+    color: white;
+  }
+
+  .signup {
+    display: block;
+    border: none;
+    border-radius: 5px;
+    background-color: #F56060;
+    color: white;
+    font-size: 170%;
+    width: 25%;
+    height: 7%;
+    font-family: inherit;
+    margin: auto;
+    margin-top: 1%;
+    text-align: center;
+    padding-top: 7px;
+    padding-bottom: 10px;
+  }
+
+  #username, #password {
+    display: block;
+    text-align: center;
+    height: 40px;
+    width: 30%;
+    font-size: 170%;
+    margin-top: 1%;
+    border-radius: 5px;
+    margin: 8px auto;
+  }
+
+  /* SIGN UP && CREATE ACCOUNT */
+
+  label, .enter-record-info,
+  .birthday-label {
+    margin-left: 30%;
+    color: #5959FF;
+    font-weight: bolder;
+  }
+
+  .birthday-label {
+    margin-top: 5%;
+    margin-left: 0;
+  }
+
+  #account_username,
+  #account_email,
+  #account_password,
+  #account_password_confirmation,
+  #diabetic_email, #diabetic_name,
+  #record_weight, #record_glucose,
+  #doctor_name, #doctor_fax, #doctor_email {
+    max-width: 40%;
+    width: 40%;
+    margin: 2% 30%;
+    height: 40px;
+    font-size: 170%;
+    margin-top: 0%;
+    margin-bottom: 4%;
+    border-radius: 5px;
+  }
+
+  #record_comment, #doctor_comments {
+    height: 45px;
+    width: 40%;
+    display: block;
+    margin: 0 30%;
+    border-radius: 5px;
+    border: none;
+  }
+
+  .birthdate, .enter-record-date {
+    margin-left: 30%;
+  }
+
+  /* ACCOUNT DASHBOARD */
+
+  #menu_choice, #preference_frequency,
+  #diabetic_birthday_1i,
+  #diabetic_birthday_2i,
+  #diabetic_birthday_3i,
+  #record_taken_at_1i,
+  #record_taken_at_2i,
+  #record_taken_at_3i,
+  #record_taken_at_4i,
+  #record_taken_at_5i {
+    color: white;
+    width: 40%;
+    padding: 2%;
+    font-size: 140%;
+    line-height: 1;
+    border: 0;
+    border-radius: 0;
+    height: 42px;
+    display: block;
+    overflow: hidden;
+    background: #8A8A8A;
+    margin: 5% 30% 10% 30%;
+  }
+
+  #preference_frequency {
+    margin-top: 1%;
+    width: 10%;
+  }
+
+  #diabetic_birthday_1i,
+  #diabetic_birthday_2i,
+  #diabetic_birthday_3i,
+  #record_taken_at_1i,
+  #record_taken_at_2i,
+  #record_taken_at_3i,
+  #record_taken_at_4i,
+  #record_taken_at_5i {
+    display: inline;
+    margin-left: 1%;
+    margin-right: 0;
+  }
+
+  #diabetic_birthday_1i, #record_taken_at_1i {
+    margin-left: 0;
+    width: 15%;
+  }
+
+  #diabetic_birthday_2i, #record_taken_at_2i {
+    width: 26%;
+  }
+
+  #diabetic_birthday_3i, #record_taken_at_3i {
+    width: 13%;
+  }
+
+  #record_taken_at_3i {
+    margin-right: 40%;
+  }
+
+  #record_taken_at_4i {
+    width: 20%;
+  }
+
+  #record_taken_at_5i {
+    width: 14%;
+  }
+
+  #record_taken_at_1i,
+  #record_taken_at_2i,
+  #record_taken_at_3i,
+  #record_taken_at_4i,
+  #record_taken_at_5i {
+    margin-top: 1%;
+    margin-bottom: 4%;
+  }
+
+  option {
+    background: transparent;
+    display: block;
+    height: 10%;
+    border: 0;
+  }
+
+  select {
+    background-color: gray;
+    display: block;
+    height: 10%;
+  }
+
+
+  [data-type="dashboard-button"], [data-type="graph-button"],
+  [data-type="edit-diabetic-button"] {
+    display: block;
+    border: none;
+    border-radius: 5px;
+    background-color: #F56060;
+    color: white;
+    font-size: 150%;
+    text-align: justify;
+    width: 40%;
+    height: 10%;
+    margin: 0 auto;
+    margin-top: 1%;
+    text-align: center;
+    padding-top: 7px;
+    padding-bottom: 10px;
+  }
+
+  [data-style="add-record"]{
+    background-color: #5959FF;
+  }
+
+  [data-style="view-record"]{
+    background-color: #5959FF;
+  }
+
+  [data-style="view-graph"]{
+    background-color: #5959FF;
+  }
+
+  [data-style="edit-diabetic"]{
+    background-color: #FF944C;
+  }
+
+  [data-style="add-diabetic"]{
+    background-color: #5959FF;
+  }
+
+  [data-style="edit-account"]{
+    background-color: #FF944C;
+  }
+
+  #records-summary {
+    /*visibility:hidden;*/
+    display: none;
+    margin: 0 10%;
+    max-height: 500px;
+    overflow: auto;
+  }
+
+  .help-text {
+    margin: 0 10%;
+    max-height: 500px;
+    overflow: auto;
+  }
+
+  .help-text em {
+    font-weight: bolder;
+    margin-top: 30px;
+    color: #5959FF;
+  }
+
+  .help-text p {
+    margin-top: 40px;
+  }
+
+  [data-type="edit-record-button"] {
+    display: inline;
+    border: none;
+    border-radius: 5px;
+    background-color: #FF944C;
+    color: white;
+    font-size: 100%;
+    text-align: justify;
+    width: 15%;
+    height: 5%;
+    margin: 0 auto;
+    margin-top: 4%;
+    text-align: center;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    margin-bottom: 10px;
+  }
+
+  /* EDIT STUFF FOR A DIABETIC */
+
+  [data-style="edit-preferences"],
+  [data-style="edit-user-info"],
+  [data-style="edit-doctor-info"] {
+    background-color: #FF944C;
+    margin-top: 3%;
+  }
+
+  [data-style="edit-preferences"] {
+    margin-top: 10%;
+  }
+
+  #records-summary {
+    /*visibility:hidden;*/
+    display: none;
+  }
+
+  .help-text em {
+    font-weight: bolder;
+    margin-top: 30px;
+    color: #5959FF;
+  }
+
+  .help-text p {
+    margin-top: 40px;
+  }
+
+
+
+  p select, #diabetic_birthday_1i, #diabetic_birthday_2i,
+  #diabetic_birthday_3i {
+    display: inline;
+  }
+
+  /* NAV BAR */
+
+  #navbar {
+    position: fixed;
+    bottom: 1%;
+    height: 12%;
+    width: 100%;
+  }
+
+  #navbar button {
+    border: none;
+    height: 60%;
+    width: 20%;
+    color: white;
+    border-radius: 5px;
+    font-size: 145%;
+    margin: 0 15%;
+    margin-bottom: 10%;
+  }
+
+  #logout-button, #cancel-button {
+    background-color: #F56060;
+  }
+
+
+  #help-button, #submit-button, #records-toggle-button {
+    background: #4DB84D;
+  }
+
+
+/************************************************
+                        TABLET
+*************************************************/
+
+@media only screen and (max-width: 1024px) {
+
+
+
+/* CREATE ACCOUNT */
+
+  body {
+    background-size: auto;
+    background: #99D6FF url("blurry-blue-glass-medium.jpg");
+  }
+
+  #content {
+    width: 99%;
+    height: 100%;
+  }
+
+  #title {
+    margin-top: 5%;
+  }
+
+  #logo {
+    width: 25%;
+    height: 26.4%;
+    margin: auto;
+    margin-top: 10%;
+  }
+
+  #logo img {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .submit {
+    border: none;
+    border-radius: 5px;
+    background-color: #5959FF;
+    display: block;
+    width: 25%;
+    height: 7%;
+    margin: 0 auto;
+    margin-top: 8%;
+    padding-top: 7px;
+    padding-bottom: 10px;
+    font-size: 170%;
+    color: white;
+  }
+
+  .signup {
+    display: block;
+    border: none;
+    border-radius: 5px;
+    background-color: #F56060;
+    color: white;
+    font-size: 170%;
+    width: 25%;
+    height: 7%;
+    font-family: inherit;
+    margin: auto;
+    margin-top: 1%;
+    text-align: center;
+    padding-top: 7px;
+    padding-bottom: 10px;
+  }
+
+  #username, #password {
+    display: block;
+    text-align: center;
+    height: 40px;
+    width: 30%;
+    font-size: 170%;
+    margin-top: 2%;
+    border-radius: 5px;
+    margin: 8px auto;
+  }
+
+  .account-title {
+    text-align: center;
+  }
+
+  /* SIGN UP && CREATE ACCOUNT */
+
+  label, .enter-record-info,
+  .birthday-label {
+    margin-left: 25%;
+  }
+
+  .birthday-label {
+    margin-top: 5%;
+    margin-left: 0;
+  }
+
+  #account_username,
+  #account_email,
+  #account_password,
+  #account_password_confirmation,
+  #diabetic_email, #diabetic_name,
+  #record_weight, #record_glucose,
+  #doctor_name, #doctor_fax, #doctor_email {
+    max-width: 50%;
+    width: 50%;
+    margin: 2% 25%;
+    margin-top: 0%;
+    margin-bottom: 4%;
+  }
+
+  #record_comment, #doctor_comments {
+    height: 45px;
+    width: 50%;
+    display: block;
+    margin: 0 25%;
+    border-radius: 5px;
+    border: none;
+  }
+
+  .birthdate, .enter-record-date {
+    margin-left: 25%;
+  }
+
+  /* ACCOUNT DASHBOARD */
+
+  #menu_choice,
+  #diabetic_birthday_1i,
+  #diabetic_birthday_2i,
+  #diabetic_birthday_3i,
+  #record_taken_at_1i,
+  #record_taken_at_2i,
+  #record_taken_at_3i,
+  #record_taken_at_4i,
+  #record_taken_at_5i {
+    color: white;
+    width: 50%;
+    padding: 2%;
+    font-size: 140%;
+    line-height: 1;
+    border: 0;
+    border-radius: 0;
+    height: 42px;
+    display: block;
+    overflow: hidden;
+    background: #8A8A8A;
+    margin: 8% 25% 10% 25%;
+  }
+
+  #preference_frequency {
+      color: white;
+      width: 10%;
+      padding: 2%;
+      font-size: 140%;
+      line-height: 1;
+      border: 0;
+      border-radius: 0;
+      height: 42px;
+      display: block;
+      overflow: hidden;
+      background: #8A8A8A;
+      margin: 1% 25% 10% 25%;
+    }
+
+  #diabetic_birthday_1i,
+  #diabetic_birthday_2i,
+  #diabetic_birthday_3i,
+  #record_taken_at_1i,
+  #record_taken_at_2i,
+  #record_taken_at_3i,
+  #record_taken_at_4i,
+  #record_taken_at_5i {
+    display: inline;
+    margin-left: 1%;
+    margin-right: 0;
+  }
+
+  #diabetic_birthday_1i, #record_taken_at_1i {
+    margin-left: 0;
+    width: 18%;
+  }
+
+  #diabetic_birthday_2i, #record_taken_at_2i {
+    width: 33%;
+  }
+
+  #diabetic_birthday_3i, #record_taken_at_3i {
+    width: 13%;
+  }
+
+  #record_taken_at_3i {
+    margin-right: 30%;
+  }
+
+  #record_taken_at_4i {
+    width: 22%;
+  }
+
+  #record_taken_at_5i {
+    width: 15%;
+  }
+
+  #record_taken_at_1i,
+  #record_taken_at_2i,
+  #record_taken_at_3i,
+  #record_taken_at_4i,
+  #record_taken_at_5i {
+    margin-top: 1%;
+    margin-bottom: 4%;
+  }
+
+  option {
+    background: transparent;
+    display: block;
+    height: 10%;
+    border: 0;
+  }
+
+  select {
+    background-color: gray;
+    display: block;
+    height: 10%;
+  }
+
+  [data-type="dashboard-button"], [data-type="graph-button"],
+  [data-type="edit-diabetic-button"] {
+    display: block;
+    border: none;
+    border-radius: 5px;
+    background-color: #F56060;
+    color: white;
+    font-size: 150%;
+    text-align: justify;
+    width: 50%;
+    height: 10%;
+    margin: 0 auto;
+    margin-top: 1%;
+    text-align: center;
+    padding-top: 7px;
+    padding-bottom: 10px;
+  }
+
+  [data-style="add-record"]{
+    background-color: #5959FF;
+  }
+
+  [data-style="view-record"]{
+    background-color: #5959FF;
+  }
+
+  [data-style="view-graph"]{
+    background-color: #5959FF;
+  }
+
+  [data-style="edit-diabetic"]{
+    background-color: #FF944C;
+  }
+
+  [data-style="add-diabetic"]{
+    background-color: #5959FF;
+  }
+
+  [data-style="edit-account"]{
+    background-color: #FF944C;
+  }
+
+
+  #records-summary {
+    /*visibility:hidden;*/
+    display: none;
+    margin: 0 10%;
+    max-height: 500px;
+    overflow: auto;
+  }
+
+  .help-text {
+    margin: 0 10%;
+    max-height: 500px;
+    overflow: auto;
+  }
+
+  .help-text em {
+    font-weight: bolder;
+    margin-top: 30px;
+    color: #5959FF;
+  }
+
+  .help-text p {
+    margin-top: 40px;
+  }
+
+  [data-type="edit-record-button"] {
+    display: inline;
+    border: none;
+    border-radius: 5px;
+    background-color: #FF944C;
+    color: white;
+    font-size: 100%;
+    text-align: justify;
+    width: 15%;
+    height: 5%;
+    margin: 0 auto;
+    margin-top: 4%;
+    text-align: center;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    margin-bottom: 10px;
+  }
+
+  /* EDIT STUFF FOR A DIABETIC */
+
+  [data-style="edit-preferences"],
+  [data-style="edit-user-info"],
+  [data-style="edit-doctor-info"] {
+    background-color: #FF944C;
+    margin-top: 3%;
+  }
+
+  [data-style="edit-preferences"] {
+    margin-top: 10%;
+  }
+
+  /* NAV BAR */
+
+  #navbar {
+    position: fixed;
+    bottom: 2%;
+    height: 12%;
+    width: 100%;
+  }
+
+  #navbar button {
+    border: none;
+    height: 90%;
+    width: 45%;
+    color: white;
+    border-radius: 5px;
+    font-size: 145%;
+    margin: 0 2.5%;
+    margin-bottom: 10%;
+  }
+
+  #logout-button, #cancel-button {
+    background-color: #F56060;
+  }
+
+  #help-button, #submit-button, #records-toggle-button {
+    background: #4DB84D;
+  }
+}
+
+/************************************************
+                        PHABLET
+*************************************************/
+
+
+@media only screen and (max-width: 675px) {
+
+  /* CREATE ACCOUNT */
+
+  body {
+    background-size: auto;
+    background: #99D6FF url("blurry-blue-glass-medium.jpg");
+  }
+
+  #title {
+    margin-top: 5%;
+  }
+
+  #content {
+    width: 99%;
+    height: 100%;
+  }
+
+  #logo {
+    width: 30%;
+    height: 26.4%;
+    margin: auto;
+    margin-top: 10%;
+  }
+
+  #logo img {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .submit {
+    border: none;
+    border-radius: 5px;
+    background-color: #5959FF;
+    display: block;
+    width: 35%;
+    height: 7%;
+    margin: 0 auto;
+    margin-top: 8%;
+    padding-top: 7px;
+    padding-bottom: 10px;
+    font-size: 170%;
+    color: white;
+  }
+
+  .signup {
+    display: block;
+    border: none;
+    border-radius: 5px;
+    background-color: #F56060;
+    color: white;
+    font-size: 170%;
+    width: 35%;
+    height: 7%;
+    font-family: inherit;
+    margin: auto;
+    margin-top: 1%;
+    text-align: center;
+    padding-top: 7px;
+    padding-bottom: 10px;
+  }
+
+  #username, #password {
+    display: block;
+    text-align: center;
+    height: 40px;
+    width: 40%;
+    font-size: 170%;
+    margin-top: 2%;
+    border-radius: 5px;
+    margin: 8px auto;
+  }
+
+
+  /* SIGN UP && CREATE ACCOUNT */
+
+  label, .enter-record-info,
+  .birthday-label {
+    margin-left: 10%;
+  }
+
+  .birthday-label {
+    margin-top: 5%;
+    margin-left: 0;
+  }
+
+  #account_username,
+  #account_email,
+  #account_password,
+  #account_password_confirmation,
+  #diabetic_email, #diabetic_name,
+  #record_weight, #record_glucose,
+  #doctor_name, #doctor_fax, #doctor_email {
+    max-width: 80%;
+    width: 80%;
+    margin: 2% 10%;
+    margin-top: 0%;
+    margin-bottom: 4%;
+  }
+
+  #record_comment, #doctor_comments {
+    height: 45px;
+    width: 80%;
+    display: block;
+    margin: 0 10%;
+    border-radius: 5px;
+    border: none;
+  }
+
+  .account-title {
+    text-align: center;
+  }
+
+  .birthdate, .enter-record-date {
+    margin-left: 10%;
+  }
+
+  /* ACCOUNT DASHBOARD */
+
+  #menu_choice, #preference_frequency,
+  #diabetic_birthday_1i,
+  #diabetic_birthday_2i,
+  #diabetic_birthday_3i,
+  #record_taken_at_1i,
+  #record_taken_at_2i,
+  #record_taken_at_3i,
+  #record_taken_at_4i,
+  #record_taken_at_5i {
+    margin-bottom: 5%;
+    color: white;
+    width: 65%;
+    padding: 2%;
+    font-size: 140%;
+    line-height: 1;
+    border: 0;
+    border-radius: 0;
+    height: 42px;
+    display: block;
+    overflow: hidden;
+    background: #8A8A8A;
+    margin: 10% 17.5% 15% 17.5%;
+  }
+
+  #preference_frequency {
+    margin-top: 1%;
+    margin-left: 10%;
+    width: 20%;
+  }
+
+  #diabetic_birthday_1i,
+  #diabetic_birthday_2i,
+  #diabetic_birthday_3i,
+  #record_taken_at_1i,
+  #record_taken_at_2i,
+  #record_taken_at_3i,
+  #record_taken_at_4i,
+  #record_taken_at_5i {
+    display: inline;
+    margin-left: 1%;
+    margin-right: 0;
+  }
+
+  #diabetic_birthday_1i, #record_taken_at_1i {
+    width: 20%;
+  }
+
+  #diabetic_birthday_2i, #record_taken_at_2i {
+    width: 45%;
+  }
+
+  #diabetic_birthday_3i, #record_taken_at_3i {
+    width: 20%;
+  }
+
+  #record_taken_at_3i {
+    margin-right: 8%;
+  }
+
+  #record_taken_at_4i {
+    width: 25%;
+  }
+
+  #record_taken_at_5i {
+    width: 15%;
+  }
+
+  #record_taken_at_1i,
+  #record_taken_at_2i,
+  #record_taken_at_3i,
+  #record_taken_at_4i,
+  #record_taken_at_5i {
+    margin-top: 1%;
+    margin-bottom: 4%;
+  }
+
+  option {
+    background: transparent;
+    display: block;
+    height: 10%;
+    border: 0;
+  }
+
+  select {
+    background-color: gray;
+    display: block;
+    height: 10%;
+  }
+
+  [data-type="dashboard-button"], [data-type="graph-button"],
+  [data-type="edit-diabetic-button"] {
+    display: block;
+    border: none;
+    border-radius: 5px;
+    background-color: #F56060;
+    color: white;
+    font-size: 150%;
+    text-align: justify;
+    width: 65%;
+    height: 10%;
+    margin: 0 auto;
+    margin-top: 1%;
+    text-align: center;
+    padding-top: 7px;
+    padding-bottom: 10px;
+  }
+
+  [data-style="add-record"]{
+    background-color: #5959FF;
+  }
+
+  [data-style="view-record"]{
+    background-color: #5959FF;
+  }
+
+  [data-style="view-graph"]{
+    background-color: #5959FF;
+  }
+
+  [data-style="edit-diabetic"]{
+    background-color: #FF944C;
+  }
+
+  [data-style="add-diabetic"]{
+    background-color: #5959FF;
+  }
+
+  [data-style="edit-account"]{
+    background-color: #FF944C;
+  }
+
+
+  #records-summary {
+    /*visibility:hidden;*/
+    display: none;
+    margin: 0 3%;
+    max-height: 400px;
+    overflow: auto;
+  }
+
+  .help-text {
+    margin: 0 5%;
+    max-height: 400px;
+    overflow: auto;
+  }
+
+  .help-text em {
+    font-weight: bolder;
+    margin-top: 30px;
+    color: #5959FF;
+  }
+
+  .help-text p {
+    margin-top: 40px;
+  }
+
+  [data-type="edit-record-button"] {
+    display: inline;
+    border: none;
+    border-radius: 5px;
+    background-color: #FF944C;
+    color: white;
+    font-size: 100%;
+    text-align: justify;
+    width: 15%;
+    height: 5%;
+    margin: 0 auto;
+    margin-top: 4%;
+    text-align: center;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    margin-bottom: 10px;
+  }
+
+  /* EDIT STUFF FOR A DIABETIC */
+
+  [data-style="edit-preferences"],
+  [data-style="edit-user-info"],
+  [data-style="edit-doctor-info"] {
+    background-color: #FF944C;
+    margin-top: 3%;
+  }
+
+  [data-style="edit-preferences"] {
+    margin-top: 10%;
+  }
+
+  /* NAVBAR */
+
+  #navbar {
+    position: fixed;
+    bottom: 2%;
+    height: 12%;
+    width: 100%;
+  }
+
+  #navbar button {
+    border: none;
+    height: 90%;
+    width: 45%;
+    color: white;
+    border-radius: 5px;
+    font-size: 145%;
+    margin: 0 2.5%;
+    margin-bottom: 10%;
+  }
+
+  #logout-button, #cancel-button {
+    background-color: #F56060;
+  }
+
+
+  #help-button, #submit-button, #records-toggle-button {
+    background: #4DB84D;
+  }
+}
+
+
+/************************************************
+                        MOBILE
+*************************************************/
+
+@media only screen and (max-width: 480px) {
+
+
+  /* CREATE ACCOUNT */
+
+  body {
+    background-size: auto;
+    background: #99D6FF url("blurry-blue-glass-small.jpg");
+  }
+
+  #content {
+    width: 98%;
+    max-height: 60%;
+  }
+
+  #title {
+    margin-top: 8%;
+  }
+
+  #logo {
+    width: 75%;
+    height: 26.4%;
+    margin: auto;
+    margin-top: 2%;
+  }
+
+  #logo img {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+
+  .submit {
+    border: none;
+    border-radius: 5px;
+    background-color: #5959FF;
+    display: block;
+    width: 80%;
+    height: 10%;
+    margin: auto;
+    margin-top: 10%;
+    padding-top: 7px;
+    padding-bottom: 10px;
+    font-size: 170%;
+    color: white;
+  }
+
+
+  .signup {
+    display: block;
+    border: none;
+    border-radius: 5px;
+    background-color: #F56060;
+    color: white;
+    font-size: 170%;
+    width: 80%;
+    height: 7%;
+    font-family: inherit;
+    margin: 0 auto;
+    margin-top: 2%;
+    text-align: center;
+    padding-top: 7px;
+    padding-bottom: 10px;
+  }
+
+
+  #username, #password {
+    height: 40px;
+    width: 93.75%;
+    font-size: 170%;
+    margin-top: 10px;
+    margin-left: 8px;
+    border-radius: 5px;
+  }
+
+  /* SIGN UP && CREATE ACCOUNT */
+
+  label, .enter-record-info,
+  .birthday-label {
+    margin-left: 3.5%;
+    color: #5959FF;
+    font-weight: bolder;
+  }
+
+  .birthday-label {
+    margin-top: 5%;
+    margin-left: 0;
+  }
+
+  #account_username,
+  #account_email,
+  #account_password,
+  #account_password_confirmation,
+  #diabetic_email, #diabetic_name,
+  #record_weight, #record_glucose,
+  #doctor_name, #doctor_fax, #doctor_email{
+    max-width: 92%;
+    width: 92%;
+    margin: 1.5% 3.5%;
+    height: 40px;
+    font-size: 170%;
+    margin-top: 0%;
+    margin-bottom: 4%;
+    border-radius: 5px;
+  }
+
+  #record_comment, #doctor_comments {
+    height: 45px;
+    width: 92%;
+    display: block;
+    margin: 0 3.5%;
+    border-radius: 5px;
+    border: none;
+  }
+
+  .account-title {
+    text-align: center;
+  }
+
+  .birthdate, .enter-record-date {
+    margin-left: 3.5%;
+  }
+
+
+  /* ACCOUNT DASHBOARD */
+
+  #title {
+    text-align: center;
+    color: #5959FF;
+  }
+
+  #menu_choice, #preference_frequency,
+  #diabetic_birthday_1i,
+  #diabetic_birthday_2i,
+  #diabetic_birthday_3i,
+  #record_taken_at_1i,
+  #record_taken_at_2i,
+  #record_taken_at_3i,
+  #record_taken_at_4i,
+  #record_taken_at_5i {
+    margin-bottom: 5%;
+    color: white;
+    width: 90%;
+    padding: 2%;
+    font-size: 140%;
+    line-height: 1;
+    border: 0;
+    border-radius: 0;
+    height: 42px;
+    display: block;
+    overflow: hidden;
+    background: #8A8A8A;
+    margin: 10% 5%;
+  }
+
+  #preference_frequency {
+    margin-top: 1%;
+    width: 20%;
+    margin-left: 5%;
+  }
+
+  #diabetic_birthday_1i,
+  #diabetic_birthday_2i,
+  #diabetic_birthday_3i,
+  #record_taken_at_1i,
+  #record_taken_at_2i,
+  #record_taken_at_3i,
+  #record_taken_at_4i,
+  #record_taken_at_5i {
+    display: inline;
+    margin-left: 1%;
+    margin-right: 0;
+  }
+
+  #diabetic_birthday_1i, #record_taken_at_1i {
+    width: 27%;
+  }
+
+  #diabetic_birthday_2i, #record_taken_at_2i {
+    width: 45%;
+  }
+
+  #diabetic_birthday_3i, #record_taken_at_3i {
+    width: 20%;
+  }
+
+  #record_taken_at_3i {
+    margin-right: 1%;
+  }
+
+  #record_taken_at_4i {
+    width: 35%;
+  }
+
+  #record_taken_at_5i {
+    width: 20%;
+  }
+
+  #record_taken_at_1i,
+  #record_taken_at_2i,
+  #record_taken_at_3i,
+  #record_taken_at_4i,
+  #record_taken_at_5i {
+    margin-top: 1%;
+    margin-bottom: 4%;
+  }
+
+  option {
+    background: transparent;
+    display: block;
+    height: 10%;
+    border: 0;
+  }
+
+  #submenu {
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+  }
+
+  [data-type="dashboard-button"], [data-type="graph-button"],
+  [data-type="edit-diabetic-button"] {
+    display: block;
+    border: none;
+    border-radius: 5px;
+    background-color: #F56060;
+    color: white;
+    font-size: 150%;
+    text-align: justify;
+    width: 100%;
+    height: 10%;
+    margin: 0 auto;
+    margin-top: 4%;
+    text-align: center;
+    padding-top: 7px;
+    padding-bottom: 10px;
+  }
+
+  [data-style="add-record"]{
+    background-color: #5959FF;
+  }
+
+  [data-style="view-record"]{
+    background-color: #5959FF;
+  }
+
+  [data-style="view-graph"]{
+    background-color: #5959FF;
+  }
+
+  [data-style="edit-diabetic"]{
+    background-color: #FF944C;
+  }
+
+  [data-style="add-diabetic"]{
+    background-color: #5959FF;
+  }
+
+  [data-style="edit-account"]{
+    background-color: #FF944C;
+  }
+
+
+  /* EDIT STUFF FOR A DIABETIC */
+
+  [data-style="edit-preferences"],
+  [data-style="edit-user-info"],
+  [data-style="edit-doctor-info"] {
+    background-color: #FF944C;
+    width: 90%;
+    margin-top: 8%;
+  }
+
+  [data-style="edit-preferences"] {
+    margin-top: 16%;
+  }
+
+
+  #records-summary {
+    /*visibility:hidden;*/
+    display: none;
+    margin: 0 3%;
+    max-height: 400px;
+    overflow: auto;
+  }
+
+  .help-text {
+    margin: 0 3%;
+    max-height: 400px;
+    overflow: auto;
+  }
+
+  [data-type="edit-record-button"] {
+    display: inline;
+    border: none;
+    border-radius: 5px;
+    background-color: #FF944C;
+    color: white;
+    font-size: 100%;
+    text-align: justify;
+    width: 15%;
+    height: 5%;
+    margin: 0 auto;
+    margin-top: 4%;
+    text-align: center;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    margin-bottom: 10px;
+  }
+
+
+  /* NAVBAR */
+
+  #navbar {
+    position: fixed;
+    bottom: 0;
+    height: 12%;
+    width: 100%;
+  }
+
+  #navbar button {
+    border: none;
+    height: 90%;
+    width: 45%;
+    color: white;
+    border-radius: 5px;
+    font-size: 145%;
+    margin: 0 2.5%;
+    margin-bottom: 10%;
+  }
+
+  #logout-button, #cancel-button {
+    background-color: #F56060;
+  }
+
+  #help-button, #submit-button, #records-toggle-button {
+    background: #4DB84D;
+  }
+}

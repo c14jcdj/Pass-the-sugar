@@ -1,0 +1,24 @@
+<div id="records-summary">
+  <h3> Here are your most recent records </h3>
+  <% records.each_with_index do |record, index| %>
+    <p><%= button_tag 'Edit', data: { type: 'edit-record-button', url: edit_diabetic_record_path(diabetic, record), style: '' }, remote: true %>
+    <%= "#{index+1}" %> --
+    <%= render partial: 'records/show', locals: {record: record} %></p>
+  <% end  %>
+</div>
+<div id="records-graph" data-url='<%= show_graph_path(account,diabetic) %>'>
+  <%= render :partial => 'graphs/show' %>
+</div>
+
+<script>
+var title = "<%= diabetic.name %>'s records"
+var leftButton = {
+  type: 'cancel',
+  text: 'Back'
+}
+var rightButton = {
+  type: 'records-toggle',
+  text: 'Records'
+}
+$('#records-graph').trigger('getGraph')
+</script>

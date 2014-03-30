@@ -1,0 +1,24 @@
+#notice-box{
+  position: absolute;
+  z-index: 99;
+  left: 0;
+  right: 0
+}
+
+#notice{
+  display:none;
+  margin: 0 auto;
+  text-align: center;
+  overflow: hidden;
+}
+#notice ul{
+  margin:0;
+  padding:0;
+}
+#notice li{
+  list-style:none;
+  margin: 0;
+  background-color: #F56060;
+  color: white;
+  padding: 10px;
+}

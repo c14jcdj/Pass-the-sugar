@@ -1,0 +1,12 @@
+<%= form_for ([diabetic,record]), remote: true do |f| %>
+  <%= f.label :weight %><br>
+  <%= f.text_field :weight %><br>
+  <%= f.label :glucose %><br>
+  <%= f.text_field :glucose %><br>
+  <%= f.label :comment %><br>
+  <%= f.text_area :comment %><br>
+  <%= f.label :reading_taken_on %><br>
+  <div class="enter-record-date">
+    <%= f.datetime_select :taken_at, ampm: true, minute_step: 5 %>
+  </div>
+<% end %>

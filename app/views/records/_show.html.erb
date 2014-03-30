@@ -1,0 +1,11 @@
+
+  <span>
+    Date: <%= record.taken_at.localtime.strftime("%m/%d %I:%M %p") %>
+
+    Weight: <%=  record.weight if record.weight.present? %>
+
+    Glucose: <%=  record.glucose if record.glucose.present? %>
+
+    Comments: <%=  record.comment if record.comment.present? %>
+
+  </span>

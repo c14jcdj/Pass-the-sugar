@@ -1,0 +1,11 @@
+<%= form_for [diabetic, preference], remote: true do |f| %>
+  <br>
+  <%= f.label :reminders %><br><br>
+  <%= f.label :reminders, "Yes", :value => "true" %>
+  <%= f.radio_button :reminders, true, :checked => true %>
+  <%= f.label :reminders, "No", :value => "false" %>
+  <%= f.radio_button :reminders, false %><br><br>
+  <br><br>
+  <%= f.label :frequency %><br>
+  <%= f.select :frequency, (1..3) %><br><br>
+<% end %>

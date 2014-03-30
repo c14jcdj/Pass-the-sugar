@@ -1,0 +1,12 @@
+<%= render partial: 'doctors/form', locals: { doctor: doctor, diabetic: diabetic } %>
+<script>
+var title = 'Create a Doctor <% doctor.name %>'
+var leftButton = {
+  type: 'cancel',
+  text: 'Cancel'
+}
+var rightButton = {
+  type: 'submit',
+  text: 'Save Doctor'
+}
+</script>

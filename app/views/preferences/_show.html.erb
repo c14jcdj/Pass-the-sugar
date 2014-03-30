@@ -1,0 +1,10 @@
+<h2>Hi, this is the show Preference page</h2>
+
+  <h3>Name</h3>
+  <%= @diabetic.name %><br>
+  <h3>Reminder</h3>
+  <%= @preference.reminders ? "Yes" : "No" %><br>
+  <h3>Frequency</h3>
+  <%= @preference.frequency %><br>
+
+ <span><%= link_to 'Edit', edit_diabetic_preference_path(@preference) %></span>

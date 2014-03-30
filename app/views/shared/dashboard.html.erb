@@ -1,0 +1,40 @@
+<form action = "menu", method ="get" >
+  <%= select_tag "menu_choice", options_for_select(menu_options)
+   %>
+   <input type="hidden" name="account_id" value=<%= account.id  %>>
+
+   <%= button_tag "Render Partial", data: { type: 'submit' }, remote: true %>
+</form>
+
+<% if diabetics %>
+  <% diabetics.each do |diabetic| %>
+    <%= button_to "Add a record for: #{diabetic.name}", diabetic_records_path(diabetic), remote: true  %>
+
+  <% end %>
+<% end %>
+
+<br>
+<%= button_to 'Edit the account', edit_account_path(account.id), remote: true %>
+
+<script>
+var title = "<%= account.username.capitalize %>'s Dashboard"
+var leftButton = {
+  type: 'logout',
+  text: 'Logout'
+}
+var rightButton = {
+  type: 'help',
+  text: 'Help'
+}
+
+var userid = <%= account.id %>
+
+window.onload = function(){
+$('body').trigger('login', userid)
+}
+</script>
+
+
+
+
+

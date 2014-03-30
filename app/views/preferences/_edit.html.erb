@@ -1,0 +1,12 @@
+<%= render :partial => 'preferences/form', :locals => { diabetic: diabetic, preference: preference } %>
+<script>
+var title = "Edit <%= diabetic.name %>'s preferences"
+var leftButton = {
+  type: 'cancel',
+  text: 'Cancel'
+}
+var rightButton = {
+  type: 'submit',
+  text: 'Save'
+}
+</script>
