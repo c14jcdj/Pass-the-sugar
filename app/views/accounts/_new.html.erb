@@ -5,8 +5,10 @@
     <% end %>
   <% end %>
 
-<div class="sign_up">
 
+<div class="sign_up">
+<div class = "opaque">
+<br><span id="signup_title">Sign Up</span><br><br>
 <%= form_for account, id: 'account-signup', remote: true do |f| %>
   <%= f.label :username %>
   <%= f.text_field :username %>
@@ -17,11 +19,12 @@
   <%= f.label :password_confirmation , 'Password Confirmation'%>
   <%= f.password_field :password_confirmation %>
 <% end %>
-
+<br><br><br><br>
+</div>
 </div>
 
 <script>
-var title = 'Sign up'
+var title = ''
 var leftButton = {
   type: 'cancel',
   text: 'Cancel'

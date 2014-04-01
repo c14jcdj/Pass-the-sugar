@@ -29,7 +29,7 @@
   font-size: 550%;
   margin-left: 500px;
    text-shadow:
-    -4px -4px 0 #fff,
+    -2px -2px 0 #fff,
     1px -1px 0 black,
     -1px 1px 0 black,
     1px 1px 0 black;
@@ -38,7 +38,7 @@
   #the {
   font-family:'Orbitron', sans-serif;
   margin-top: 85px;
-  margin-left: -140px;
+  margin-left: -150px;
   font-size: 250%;
   position: absolute;
   color: #E80000
@@ -52,7 +52,7 @@
   position: absolute;
   color: #E80000;
    text-shadow:
-    -4px -4px 0 #fff,
+    -2px -2px 0 #fff,
     1px -1px 0 black,
     -1px 1px 0 black,
     1px 1px 0 #ffffff;
@@ -71,10 +71,10 @@
     opacity: .05;
   }
 
-  #records-summary {
-    /*visibility:hidden;*/
+  /*#records-summary {
+    visibility:hidden;
     display: none;
-  }
+  }*/
 
   #content {
   position:absolute;
@@ -82,15 +82,11 @@
     max-width: 1000px;
   }
 
-  #title {
-    margin-top: 4%;
-    text-align: center;
-    color: #5959FF;
-  }
 
-  .account-title {
+
+/*  .account-title {
     text-align: center;
-  }
+  }*/
 
   #none-button {
     visibility: hidden;
@@ -98,8 +94,8 @@
 
 
 #member {
-  position: absolute;
-  margin-left: 990px;
+  position: fixed;
+  margin-left: 960px;
   margin-top: -22px;
   width: 20%;
   color: red;
@@ -109,7 +105,7 @@
 }
 
   .submit {
-    position: absolute;
+    position: fixed;
     font-family:'Orbitron', sans-serif;
     padding: 10px;
     margin-top: 20px;
@@ -126,11 +122,11 @@
 
 
   .signup {
-    position: absolute;
+    position: fixed;
     font-family:'Orbitron', sans-serif;
     display: inline;
     padding: 10px;
-    margin-left: 1170px;
+    margin-left: 1140px;
     margin-top: -34px;
     border-radius: 5px;
     background-color: #E80000;
@@ -162,8 +158,45 @@
   label, .enter-record-info,
   .birthday-label {
     margin-left: 30%;
-    color: #5959FF;
+    color: #E80000;
+    font-family:'Orbitron', sans-serif;
+
     font-weight: bolder;
+  }
+
+  #title {
+    margin-top: 4%;
+    text-align: center;
+    font-family:'Orbitron', sans-serif;
+    color: #E80000;
+  }
+
+#signup_title {
+text-align: center;
+position: fixed;
+margin-top: 10px;
+margin-bottom: 20px;
+font-family: 'Orbitron', sans-serif;
+/*color: #E80000;*/
+font-size: 200%;
+margin-left: 250px;
+}
+
+  .sign_up {
+    margin-top: 100px;
+    position: absolute;
+    margin-top: 40px;
+    width: 75%;
+    margin-left: 300px;
+    z-index: 1;
+  }
+
+  .opaque {
+    background: rgba(0,0,0,0.05);
+  }
+
+  #submit-button {
+    background-color: red;
   }
 
   .birthday-label {
@@ -171,22 +204,6 @@
     margin-left: 0;
   }
 
-  #account_username,
-  #account_email,
-  #account_password,
-  #account_password_confirmation,
-  #diabetic_email, #diabetic_name,
-  #record_weight, #record_glucose,
-  #doctor_name, #doctor_fax, #doctor_email {
-    max-width: 40%;
-    width: 40%;
-    margin: 2% 30%;
-    height: 40px;
-    font-size: 170%;
-    margin-top: 0%;
-    margin-bottom: 4%;
-    border-radius: 5px;
-  }
 
   #record_comment, #doctor_comments {
     height: 45px;
@@ -413,14 +430,14 @@
 
   /* NAV BAR */
 
-  #navbar {
+  /*#navbar {
     position: fixed;
     bottom: 1%;
     height: 12%;
     width: 100%;
-  }
+  }*/
 
-  #navbar button {
+  /*#navbar button {
     border: none;
     height: 60%;
     width: 20%;
@@ -429,28 +446,28 @@
     font-size: 145%;
     margin: 0 15%;
     margin-bottom: 10%;
-  }
+  }*/
 
-  #logout-button, #cancel-button {
+  /*#logout-button, #cancel-button {
     background-color: #F56060;
-  }
+  }*/
 
 
-  #help-button, #submit-button, #records-toggle-button {
-    background: #4DB84D;
-  }
+  /*#help-button, #submit-button, #records-toggle-button {
+    background: #E80000;
+  }*/
 
 
-/************************************************
+/*/*//************************************************
                         TABLET
 *************************************************/
 
-@media only screen and (max-width: 1024px) {
+/*@media only screen and (max-width: 1024px) {*/
 
 
 
 /* CREATE ACCOUNT */
-
+/*
   body {
     background-size: auto;
     background: #99D6FF url("blurry-blue-glass-medium.jpg");
@@ -519,13 +536,13 @@
     border-radius: 5px;
     margin: 8px auto;
   }
-
+*/
   .account-title {
     text-align: center;
   }
 
   /* SIGN UP && CREATE ACCOUNT */
-
+/*
   label, .enter-record-info,
   .birthday-label {
     margin-left: 25%;
@@ -562,9 +579,9 @@
   .birthdate, .enter-record-date {
     margin-left: 25%;
   }
-
+*/
   /* ACCOUNT DASHBOARD */
-
+/*
   #menu_choice,
   #diabetic_birthday_1i,
   #diabetic_birthday_2i,
@@ -747,9 +764,9 @@
     padding-bottom: 7px;
     margin-bottom: 10px;
   }
-
+*/
   /* EDIT STUFF FOR A DIABETIC */
-
+/*
   [data-style="edit-preferences"],
   [data-style="edit-user-info"],
   [data-style="edit-doctor-info"] {
@@ -760,9 +777,9 @@
   [data-style="edit-preferences"] {
     margin-top: 10%;
   }
-
+*/
   /* NAV BAR */
-
+/*
   #navbar {
     position: fixed;
     bottom: 2%;
@@ -789,16 +806,16 @@
     background: #4DB84D;
   }
 }
-
+*/
 /************************************************
                         PHABLET
 *************************************************/
 
 
-@media only screen and (max-width: 675px) {
+/*@media only screen and (max-width: 675px) {*/
 
   /* CREATE ACCOUNT */
-
+/*
   body {
     background-size: auto;
     background: #99D6FF url("blurry-blue-glass-medium.jpg");
@@ -867,10 +884,10 @@
     border-radius: 5px;
     margin: 8px auto;
   }
-
+*/
 
   /* SIGN UP && CREATE ACCOUNT */
-
+/*
   label, .enter-record-info,
   .birthday-label {
     margin-left: 10%;
@@ -911,9 +928,9 @@
   .birthdate, .enter-record-date {
     margin-left: 10%;
   }
-
+*/
   /* ACCOUNT DASHBOARD */
-
+/*
   #menu_choice, #preference_frequency,
   #diabetic_birthday_1i,
   #diabetic_birthday_2i,
@@ -1087,9 +1104,9 @@
     padding-bottom: 7px;
     margin-bottom: 10px;
   }
-
+*/
   /* EDIT STUFF FOR A DIABETIC */
-
+/*
   [data-style="edit-preferences"],
   [data-style="edit-user-info"],
   [data-style="edit-doctor-info"] {
@@ -1100,9 +1117,9 @@
   [data-style="edit-preferences"] {
     margin-top: 10%;
   }
-
+*/
   /* NAVBAR */
-
+/*
   #navbar {
     position: fixed;
     bottom: 2%;
@@ -1130,17 +1147,17 @@
     background: #4DB84D;
   }
 }
-
+*/
 
 /************************************************
                         MOBILE
 *************************************************/
 
-@media only screen and (max-width: 480px) {
+/*@media only screen and (max-width: 480px) {*/
 
 
   /* CREATE ACCOUNT */
-
+/*
   body {
     background-size: auto;
     background: #99D6FF url("blurry-blue-glass-small.jpg");
@@ -1210,9 +1227,9 @@
     margin-left: 8px;
     border-radius: 5px;
   }
-
+*/
   /* SIGN UP && CREATE ACCOUNT */
-
+/*
   label, .enter-record-info,
   .birthday-label {
     margin-left: 3.5%;
@@ -1258,10 +1275,10 @@
   .birthdate, .enter-record-date {
     margin-left: 3.5%;
   }
-
+*/
 
   /* ACCOUNT DASHBOARD */
-
+/*
   #title {
     text-align: center;
     color: #5959FF;
@@ -1397,11 +1414,11 @@
   [data-style="edit-account"]{
     background-color: #FF944C;
   }
-
+*/
 
   /* EDIT STUFF FOR A DIABETIC */
 
-  [data-style="edit-preferences"],
+/*  [data-style="edit-preferences"],
   [data-style="edit-user-info"],
   [data-style="edit-doctor-info"] {
     background-color: #FF944C;
@@ -1446,10 +1463,10 @@
     margin-bottom: 10px;
   }
 
-
+*/
   /* NAVBAR */
 
-  #navbar {
+/*  #navbar {
     position: fixed;
     bottom: 0;
     height: 12%;
@@ -1475,3 +1492,4 @@
     background: #4DB84D;
   }
 }
+*/
