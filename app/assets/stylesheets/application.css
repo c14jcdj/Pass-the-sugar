@@ -15,9 +15,60 @@
 
   /* CREATE ACCOUNT */
 
+
+
   body {
     background-size: 100%;
-    background: #99D6FF url("blurry-blue-glass.jpg");
+    background-image: url("sugar-cubes.jpg");
+
+  }
+
+  #pass {
+  font-family:'Orbitron', sans-serif;
+  color: #E80000;
+  font-size: 550%;
+  margin-left: 500px;
+   text-shadow:
+    -4px -4px 0 #fff,
+    1px -1px 0 black,
+    -1px 1px 0 black,
+    1px 1px 0 black;
+  }
+
+  #the {
+  font-family:'Orbitron', sans-serif;
+  margin-top: 85px;
+  margin-left: -140px;
+  font-size: 250%;
+  position: absolute;
+  color: #E80000
+  }
+
+  #sugar {
+  font-family:'Orbitron', sans-serif;
+  margin-top: 120px;
+  margin-left: -320px;
+  font-size: 850%;
+  position: absolute;
+  color: #E80000;
+   text-shadow:
+    -4px -4px 0 #fff,
+    1px -1px 0 black,
+    -1px 1px 0 black,
+    1px 1px 0 #ffffff;
+  }
+
+  #logo {
+    margin-top: 225px
+  }
+
+  .nav_bar {
+    margin-top: -50px;
+    width:100%;
+    height: 10%;
+    position: fixed;
+    background-color: black;
+    opacity: .05;
   }
 
   #records-summary {
@@ -26,6 +77,7 @@
   }
 
   #content {
+  position:absolute;
     width: 75%;
     max-width: 1000px;
   }
@@ -44,60 +96,66 @@
     visibility: hidden;
   }
 
-  #logo {
-    width: 25%;
-    height: 26.4%;
-    margin: auto;
-    margin-top: 10%;
-  }
 
-  #logo img {
-    width: 100%;
-    margin: 0 auto;
-  }
+#member {
+  position: absolute;
+  margin-left: 990px;
+  margin-top: -22px;
+  width: 20%;
+  color: red;
+  font-size: 120%;
+  font-family:'Orbitron', sans-serif;
+
+}
 
   .submit {
-    border: none;
+    position: absolute;
+    font-family:'Orbitron', sans-serif;
+    padding: 10px;
+    margin-top: 20px;
     border-radius: 5px;
-    background-color: #5959FF;
-    display: block;
-    width: 25%;
-    height: 7%;
-    margin: auto;
-    margin-top: 8%;
-    padding-top: 7px;
-    padding-bottom: 10px;
-    font-size: 170%;
+    background-color: #E80000;
+    border: 1px solid black;
+    height: 35px;
+    margin-left: 4px;
+    width: 10%;
     color: white;
   }
+
+
+
 
   .signup {
-    display: block;
-    border: none;
+    position: absolute;
+    font-family:'Orbitron', sans-serif;
+    display: inline;
+    padding: 10px;
+    margin-left: 1170px;
+    margin-top: -34px;
     border-radius: 5px;
-    background-color: #F56060;
+    background-color: #E80000;
+    border: 1px solid black;
+    height: 35px;
+    /*margin-left: 4px;*/
+    width: 10%;
     color: white;
-    font-size: 170%;
-    width: 25%;
-    height: 7%;
-    font-family: inherit;
-    margin: auto;
-    margin-top: 1%;
-    text-align: center;
-    padding-top: 7px;
-    padding-bottom: 10px;
   }
 
+.login_form {
+  margin-top: -58px;
+}
   #username, #password {
-    display: block;
+    position: relative;
+    display: inline;
     text-align: center;
-    height: 40px;
-    width: 30%;
-    font-size: 170%;
-    margin-top: 1%;
+    height: 30px;
+    width: 20%;
+    font-size: 120%;
+    border: 1px solid grey;
+    margin: 20px 4px 0px 4px;
     border-radius: 5px;
-    margin: 8px auto;
   }
+
 
   /* SIGN UP && CREATE ACCOUNT */
 

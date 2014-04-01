@@ -1,4 +1,4 @@
-GlucoseAmigo::Application.routes.draw do
+PassTheSugar::Application.routes.draw do
   mount JasmineRails::Engine => '/specs' if defined?(JasmineRails)
 
   root to: 'accounts#index'

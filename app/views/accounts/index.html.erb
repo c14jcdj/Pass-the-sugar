@@ -1,16 +1,23 @@
-<div id="logo">
-  <%= image_tag("large_logo.png") %>
-</div>
-<br><br>
 
+<div class="login_form">
 <%= form_tag sessions_path, id: 'account-login', remote: true do %>
     <%= text_field_tag :username, '', :placeholder => "Username" %>
     <%= password_field_tag :password,'', :placeholder => "Password" %>
     <%= button_tag "Log In" , :class => "submit", data: {type: 'submit'} %>
 <% end %>
+
+</div>
+
+<div class = "signup_form">
+  <span id="member">Not a Member?</span>
 <%= button_tag "Sign Up", :class => "signup", :data => { type: 'signup', url: new_account_path}, :remote => true %>
+</div>
 <br><br>
 
+<div id="logo">
+  <span id="pass">Pass</span> <span id="the">the</span> <span id= "sugar">Sugar</span>
+</div>
+<br><br>
 
 
 
