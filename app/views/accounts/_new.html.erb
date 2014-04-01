@@ -5,6 +5,16 @@
     <% end %>
   <% end %>
 
+<div id="cancel"> <%= link_to "Home", :back, :style =>
+                                                      "color:#E80000;
+                                                      font-family:'Orbitron', sans-serif;
+                                                        text-decoration:none;
+                                                        font-size: 175%;
+                                                        margin-left:1100px;
+                                                        margin-top:-120px;
+                                                        position:fixed;
+
+                                                      " %></div>
 
 <div class="sign_up">
 <div class = "opaque">
@@ -18,10 +28,24 @@
   <%= f.password_field :password %>
   <%= f.label :password_confirmation , 'Password Confirmation'%>
   <%= f.password_field :password_confirmation %>
+  <%= f.submit "Sign Up" , :style =>
+                            "height: 35px;
+                            color:white;
+                            width:278px;
+                            border:1px solid black;
+                            font-family:'Orbitron', sans-serif;
+                            border-radius: 5px;
+                            background-color: #E80000;
+                            margin-left:202px" %>
 <% end %>
 <br><br><br><br>
 </div>
 </div>
+
+
+
+
+<!--
 
 <script>
 var title = ''
@@ -34,3 +58,4 @@ var rightButton = {
   text: 'Sign up'
 }
 </script>
+ -->

@@ -1,8 +1,13 @@
+
 <form action = "menu", method ="get", data-remote='true' >
   <%= select_tag "menu_choice", options_for_select(menu_options) %>
    <input type="hidden" name="account_id" value='<%= account.id  %>' >
 </form>
 <div id='submenu'></div>
+
+<!-- <div> <%= button_to "Logout", session_path(account.id), :method => :delete %></div> -->
+
+
 <script>
 var title = "<%= account.username.capitalize %>'s Dashboard"
 var leftButton = {

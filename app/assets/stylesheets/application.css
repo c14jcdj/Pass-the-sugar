@@ -23,6 +23,9 @@
 
   }
 
+
+
+
   #pass {
   font-family:'Orbitron', sans-serif;
   color: #E80000;
@@ -65,7 +68,7 @@
   .nav_bar {
     margin-top: -50px;
     width:100%;
-    height: 10%;
+    height: 20%;
     position: fixed;
     background-color: black;
     opacity: .05;
@@ -103,6 +106,8 @@
   font-family:'Orbitron', sans-serif;
 
 }
+
+
 
   .submit {
     position: fixed;
@@ -164,41 +169,100 @@
     font-weight: bolder;
   }
 
-  #title {
-    margin-top: 4%;
-    text-align: center;
-    font-family:'Orbitron', sans-serif;
-    color: #E80000;
-  }
-
-#signup_title {
-text-align: center;
-position: fixed;
-margin-top: 10px;
-margin-bottom: 20px;
-font-family: 'Orbitron', sans-serif;
-/*color: #E80000;*/
-font-size: 200%;
-margin-left: 250px;
-}
 
   .sign_up {
     margin-top: 100px;
-    position: absolute;
+    position: fixed;
     margin-top: 40px;
     width: 75%;
     margin-left: 300px;
     z-index: 1;
   }
 
+
   .opaque {
+    position: fixed;
     background: rgba(0,0,0,0.05);
   }
 
-  #submit-button {
-    background-color: red;
+.sign_up_button {
+  width: 500px;
+}
+
+#title {
+  margin-left: 35%;
+  margin-top: 45px;
+    color: #E80000;
+    font-family:'Orbitron', sans-serif;
+    font-weight: bolder;
+}
+
+#menu_choice {
+  margin-left: 450px;
+  margin-top: 100px;
+  color:white;
+  font-size: 110%;
+  font-family:'Orbitron', sans-serif;
+  height: 50px;
+}
+
+
+
+  select {
+    background-color: #E80000;
+    display: block;
+    width: 35%;
   }
 
+[data-style="add-record"]{
+    position: fixed;
+    font-family:'Orbitron', sans-serif;
+    display: inline;
+    padding: 10px;
+    margin-left: 40px;
+    margin-top: 68px;
+    border-radius: 5px;
+    background-color: #E80000;
+    border: 1px solid black;
+    height: 35px;
+    width: 25%;
+    color: white;
+  }
+
+[data-style="view-record"]{
+    position: fixed;
+    font-family:'Orbitron', sans-serif;
+    display: inline;
+    padding: 10px;
+    margin-left: 440px;
+    margin-top: 50px;
+    border-radius: 5px;
+    background-color: #E80000;
+    border: 1px solid black;
+    height: 35px;
+    /*margin-left: 4px;*/
+    width: 25%;
+    color: white;
+  }
+
+  [data-style="edit-diabetic"]{
+    position: fixed;
+    font-family:'Orbitron', sans-serif;
+    display: inline;
+    padding: 10px;
+    margin-left: 845px;
+    margin-top: 32px;
+    border-radius: 5px;
+    background-color: #E80000;
+    border: 1px solid black;
+    height: 35px;
+    /*margin-left: 4px;*/
+    width: 25%;
+    color: white;
+  }
+
+
+/*
   .birthday-label {
     margin-top: 5%;
     margin-left: 0;
@@ -217,9 +281,9 @@ margin-left: 250px;
   .birthdate, .enter-record-date {
     margin-left: 30%;
   }
-
+*/
   /* ACCOUNT DASHBOARD */
-
+/*
   #menu_choice, #preference_frequency,
   #diabetic_birthday_1i,
   #diabetic_birthday_2i,
@@ -349,11 +413,11 @@ margin-left: 250px;
 
   [data-style="edit-account"]{
     background-color: #FF944C;
-  }
+  }*/
 
-  #records-summary {
+  /*#records-summary {*/
     /*visibility:hidden;*/
-    display: none;
+   /* display: none;
     margin: 0 10%;
     max-height: 500px;
     overflow: auto;
@@ -391,11 +455,11 @@ margin-left: 250px;
     padding-top: 7px;
     padding-bottom: 7px;
     margin-bottom: 10px;
-  }
+  }*/
 
   /* EDIT STUFF FOR A DIABETIC */
 
-  [data-style="edit-preferences"],
+/*  [data-style="edit-preferences"],
   [data-style="edit-user-info"],
   [data-style="edit-doctor-info"] {
     background-color: #FF944C;
@@ -405,10 +469,10 @@ margin-left: 250px;
   [data-style="edit-preferences"] {
     margin-top: 10%;
   }
-
-  #records-summary {
+*/
+  /*#records-summary {*/
     /*visibility:hidden;*/
-    display: none;
+  /*  display: none;
   }
 
   .help-text em {
@@ -427,6 +491,8 @@ margin-left: 250px;
   #diabetic_birthday_3i {
     display: inline;
   }
+*/
+
 
   /* NAV BAR */
 
@@ -448,9 +514,36 @@ margin-left: 250px;
     margin-bottom: 10%;
   }*/
 
-  /*#logout-button, #cancel-button {
-    background-color: #F56060;
-  }*/
+  #logout-button {
+    background-color: #E80000;
+    color:white;
+    position: absolute;
+    font-family:'Orbitron', sans-serif;
+    padding: 10px;
+    margin-top: -80px;
+    border-radius: 5px;
+    border: 1px solid black;
+    height: 35px;
+    margin-left: 1100px;
+    width: 10%;
+  }
+
+
+  #help-button {
+     background-color: #E80000;
+    color:white;
+    position: absolute;
+    font-family:'Orbitron', sans-serif;
+    padding: 10px;
+    margin-top: -80px;
+    border-radius: 5px;
+    border: 1px solid black;
+    height: 35px;
+    margin-left: 10px;
+    width: 10%;
+  }
+
+
 
 
   /*#help-button, #submit-button, #records-toggle-button {
@@ -537,10 +630,10 @@ margin-left: 250px;
     margin: 8px auto;
   }
 */
-  .account-title {
+ /* .account-title {
     text-align: center;
   }
-
+*/
   /* SIGN UP && CREATE ACCOUNT */
 /*
   label, .enter-record-info,
@@ -725,7 +818,7 @@ margin-left: 250px;
 
   #records-summary {
     /*visibility:hidden;*/
-    display: none;
+   /* display: none;
     margin: 0 10%;
     max-height: 500px;
     overflow: auto;
@@ -745,9 +838,9 @@ margin-left: 250px;
 
   .help-text p {
     margin-top: 40px;
-  }
+  }*/
 
-  [data-type="edit-record-button"] {
+ /* [data-type="edit-record-button"] {
     display: inline;
     border: none;
     border-radius: 5px;
@@ -1065,7 +1158,7 @@ margin-left: 250px;
 
   #records-summary {
     /*visibility:hidden;*/
-    display: none;
+   /* display: none;
     margin: 0 3%;
     max-height: 400px;
     overflow: auto;
@@ -1085,9 +1178,9 @@ margin-left: 250px;
 
   .help-text p {
     margin-top: 40px;
-  }
+  }*/
 
-  [data-type="edit-record-button"] {
+ /* [data-type="edit-record-button"] {
     display: inline;
     border: none;
     border-radius: 5px;
@@ -1433,13 +1526,13 @@ margin-left: 250px;
 
   #records-summary {
     /*visibility:hidden;*/
-    display: none;
+    /*display: none;
     margin: 0 3%;
     max-height: 400px;
     overflow: auto;
-  }
+  }*/
 
-  .help-text {
+ /* .help-text {
     margin: 0 3%;
     max-height: 400px;
     overflow: auto;
@@ -1463,8 +1556,7 @@ margin-left: 250px;
     margin-bottom: 10px;
   }
 
-*/
-  /* NAVBAR */
+*/  /* NAVBAR */
 
 /*  #navbar {
     position: fixed;

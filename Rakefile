@@ -4,4 +4,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-GlucoseAmigo::Application.load_tasks
+PassTheSugar::Application.load_tasks
